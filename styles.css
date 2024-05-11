@@ -97,7 +97,8 @@ p{
 
    .buy-now-btn img {
         width: 15rem; 
-        margin-left: 2rem;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 2rem;
     }
 }
