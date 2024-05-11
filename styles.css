@@ -95,9 +95,9 @@ p{
         margin-bottom: 1rem; 
     }
 
-    .buy-now-btn img {
+   .buy-now-btn img {
         width: 15rem; 
-        margin-right: 1rem;
+        margin-left: 2rem;
         margin-bottom: 2rem;
     }
 }
