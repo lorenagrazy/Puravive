@@ -6,20 +6,17 @@ html, body {
 
 body {
     background-color: rgb(5, 78, 39);
-    overflow-x: hidden; /* Isso evita a barra de rolagem horizontal */
+    overflow-x: hidden; 
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Use min-height para garantir que o contêiner cubra toda a altura da tela */
+    min-height: 100vh; 
     flex-direction: column;
     text-align: center;
 }
-
-/* Restante do seu CSS permanece inalterado */
-
 
 .product {
     display: flex;
@@ -44,7 +41,7 @@ body {
 }
 
 .buy-now-btn img {
-    width: 20rem; /* Defina o tamanho desejado */
+    width: 20rem; 
     height: auto;
     margin-top: 1rem;
     margin-right: 2rem;
@@ -61,14 +58,46 @@ h1{
     margin-bottom: 0rem;
 }
 .highlight {
-    color: yellow; /* Define a cor amarela */
-    font-weight: bold; /* Opcional: torna o texto em negrito para maior destaque */
+    color: yellow; 
+    font-weight: bold; 
 }
 p{
     color: white;
     font-size: 1.8rem;
     line-height: 3rem;
    margin-right: 2rem;
+}
+@media screen and (max-width: 450px) {
+    .container {
+        padding: 0 10px; 
+    }
+p{
+    font-size:1.2rem ;
+    line-height: 1.7rem;
+    margin-left: 2rem;
+}
+    h1 {
+        font-size: 1.7rem; 
+        margin-left: 0; 
+        margin-bottom: 1rem;
+    }
 
+    .product {
+        flex-direction: column; 
+    }
 
+    .product-info {
+        margin-left: 0; 
+    }
+
+    .product-image img {
+        max-width: 60%; 
+        margin-bottom: 1rem; 
+    }
+
+    .buy-now-btn img {
+        width: 15rem; 
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+    }
 }
